@@ -7,7 +7,7 @@
 - ファイルの実行
 
 ```
-poetry run python projects/simple_llm/main.py
+poetry run python projects/quick_start/part1.py
 ```
 
 - ライブラリの追加
