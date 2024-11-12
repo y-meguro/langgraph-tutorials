@@ -15,11 +15,11 @@ class State(TypedDict):
 
 graph_builder = StateGraph(State)
 
-model = ChatOpenAI(model="gpt-3.5-turbo")
+llm = ChatOpenAI(model="gpt-4")
 
 
 def chatbot(state: State):
-    return {"messages": [model.invoke(state["messages"])]}
+    return {"messages": [llm.invoke(state["messages"])]}
 
 
 # The first argument is the unique node name
